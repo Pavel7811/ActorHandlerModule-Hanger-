@@ -6,6 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NetTopologySuite" Version="2.2.0" />
+    <PackageReference Include="NodaTime" Version="3.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="ActorHandlerModule">
       <HintPath>..\Dependence\ActorHandlerModule.dll</HintPath>
     </Reference>

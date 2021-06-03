@@ -22,3 +22,13 @@ C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule
 C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).dll
 C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).pdb
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\bin\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).deps.json
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\bin\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).dll
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\bin\Debug\netcoreapp3.1\ActorHandlerModule.dll
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\bin\Debug\netcoreapp3.1\ActorModule.dll
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\bin\Debug\netcoreapp3.1\CityDataExpansionModule.dll
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\bin\Debug\netcoreapp3.1\OSMLSGlobalLibrary.dll
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\bin\Debug\netcoreapp3.1\PathsFindingCoreModule.dll
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\bin\Debug\netcoreapp3.1\InitializeActorModule.dll
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).csproj.CopyComplete
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\bin\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).pdb

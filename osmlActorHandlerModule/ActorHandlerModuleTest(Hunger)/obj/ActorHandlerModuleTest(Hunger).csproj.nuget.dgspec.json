@@ -41,6 +41,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "NetTopologySuite": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NodaTime": {
+              "target": "Package",
+              "version": "[3.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

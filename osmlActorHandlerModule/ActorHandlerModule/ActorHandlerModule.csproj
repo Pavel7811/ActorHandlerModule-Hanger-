@@ -19,6 +19,9 @@
     <Reference Include="CityDataExpansionModule">
       <HintPath>..\Dependence\CityDataExpansionModule.dll</HintPath>
     </Reference>
+    <Reference Include="InitializeActorModule">
+      <HintPath>..\Dependence\InitializeActorModule.dll</HintPath>
+    </Reference>
     <Reference Include="OSMLSGlobalLibrary">
       <HintPath>..\Dependence\OSMLSGlobalLibrary.dll</HintPath>
     </Reference>
