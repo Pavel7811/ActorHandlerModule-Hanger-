@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NetTopologySuite" Version="2.0.0" />
+    <PackageReference Include="NetTopologySuite.Features" Version="2.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NodaTime" Version="3.0.5" />
+    <PackageReference Include="NodaTime.Serialization.JsonNet" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ActorModule">
+      <HintPath>..\dll\ActorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="InitializeActorModule">
+      <HintPath>..\..\InitModule\osmlifeInitializationModule\InitializeActorModule\bin\Debug\netcoreapp3.1\InitializeActorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="OSMLSGlobalLibrary">
+      <HintPath>..\dll\OSMLSGlobalLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="PathsFindingCoreModule">
+      <HintPath>..\..\поиск пути\pathsfindingcoremodule\PathsFindingCoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

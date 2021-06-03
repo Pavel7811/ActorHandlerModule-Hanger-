@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ActorHandlerModuleTest_Hunger_</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ActorHandlerModule\ActorHandlerModule.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ActorHandlerModule">
+      <HintPath>..\ActorHandlerModule\bin\Debug\netcoreapp3.1\ActorHandlerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="ActorModule">
+      <HintPath>..\ActorHandlerModule\bin\Debug\netcoreapp3.1\ActorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CityDataExpansionModule">
+      <HintPath>..\ActorHandlerModule\bin\Debug\netcoreapp3.1\CityDataExpansionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="InitializeActorModule">
+      <HintPath>..\ActorHandlerModule\bin\Debug\netcoreapp3.1\InitializeActorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="OSMLSGlobalLibrary">
+      <HintPath>..\ActorHandlerModule\bin\Debug\netcoreapp3.1\OSMLSGlobalLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="PathsFindingCoreModule">
+      <HintPath>..\ActorHandlerModule\bin\Debug\netcoreapp3.1\PathsFindingCoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
