@@ -14,16 +14,16 @@
 
   <ItemGroup>
     <Reference Include="ActorModule">
-      <HintPath>..\dll\ActorModule.dll</HintPath>
+      <HintPath>..\Dependence\ActorModule.dll</HintPath>
     </Reference>
-    <Reference Include="InitializeActorModule">
-      <HintPath>..\..\InitModule\osmlifeInitializationModule\InitializeActorModule\bin\Debug\netcoreapp3.1\InitializeActorModule.dll</HintPath>
+    <Reference Include="CityDataExpansionModule">
+      <HintPath>..\Dependence\CityDataExpansionModule.dll</HintPath>
     </Reference>
     <Reference Include="OSMLSGlobalLibrary">
-      <HintPath>..\dll\OSMLSGlobalLibrary.dll</HintPath>
+      <HintPath>..\Dependence\OSMLSGlobalLibrary.dll</HintPath>
     </Reference>
     <Reference Include="PathsFindingCoreModule">
-      <HintPath>..\..\поиск пути\pathsfindingcoremodule\PathsFindingCoreModule.dll</HintPath>
+      <HintPath>..\Dependence\PathsFindingCoreModule.dll</HintPath>
     </Reference>
   </ItemGroup>
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\ActorHandlerModule(Hunger)\\ActorHandlerModule\\ActorHandlerModule.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModule\\ActorHandlerModule\\ActorHandlerModule.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\ActorHandlerModule(Hunger)\\ActorHandlerModule\\ActorHandlerModule.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModule\\ActorHandlerModule\\ActorHandlerModule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\ActorHandlerModule(Hunger)\\ActorHandlerModule\\ActorHandlerModule.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModule\\ActorHandlerModule\\ActorHandlerModule.csproj",
         "projectName": "ActorHandlerModule",
-        "projectPath": "C:\\Users\\User\\Desktop\\ActorHandlerModule(Hunger)\\ActorHandlerModule\\ActorHandlerModule.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModule\\ActorHandlerModule\\ActorHandlerModule.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\ActorHandlerModule(Hunger)\\ActorHandlerModule\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModule\\ActorHandlerModule\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

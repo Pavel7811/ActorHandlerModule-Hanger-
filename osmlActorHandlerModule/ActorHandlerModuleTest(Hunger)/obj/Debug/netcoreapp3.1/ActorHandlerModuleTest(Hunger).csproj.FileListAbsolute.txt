@@ -16,3 +16,9 @@ C:\Users\User\Desktop\ActorHandlerModule(Hunger)\ActorHandlerModuleTest(Hunger)\
 C:\Users\User\Desktop\ActorHandlerModule(Hunger)\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).csproj.CopyComplete
 C:\Users\User\Desktop\ActorHandlerModule(Hunger)\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).dll
 C:\Users\User\Desktop\ActorHandlerModule(Hunger)\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).pdb
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).dll
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule\ActorHandlerModuleTest(Hunger)\obj\Debug\netcoreapp3.1\ActorHandlerModuleTest(Hunger).pdb

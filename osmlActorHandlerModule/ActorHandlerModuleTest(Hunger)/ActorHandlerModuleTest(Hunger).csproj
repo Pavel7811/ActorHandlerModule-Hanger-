@@ -6,12 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ActorHandlerModule\ActorHandlerModule.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Reference Include="ActorHandlerModule">
-      <HintPath>..\ActorHandlerModule\bin\Debug\netcoreapp3.1\ActorHandlerModule.dll</HintPath>
+      <HintPath>..\Dependence\ActorHandlerModule.dll</HintPath>
     </Reference>
     <Reference Include="ActorModule">
       <HintPath>..\ActorHandlerModule\bin\Debug\netcoreapp3.1\ActorModule.dll</HintPath>
