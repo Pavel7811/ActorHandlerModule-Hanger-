@@ -1,2 +1,0 @@
-dotnet publish ./source/ActorHandlerModule -c release -o ./source/release
-cp -f ./source/release/ActorHandlerModule.dll .
