@@ -25,7 +25,6 @@ C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule
 C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModuleHunger\ActorHandlerTestModuleHunger\bin\Release\netcoreapp3.1\NodaTime.dll
 C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModuleHunger\ActorHandlerTestModuleHunger\bin\Release\netcoreapp3.1\OSMLSGlobalLibrary.dll
 C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModuleHunger\ActorHandlerTestModuleHunger\bin\Release\netcoreapp3.1\PathsFindingCoreModule.dll
-C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModuleHunger\ActorHandlerTestModuleHunger\obj\Release\netcoreapp3.1\ActorHandlerTestModuleHunger.csprojAssemblyReference.cache
 C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModuleHunger\ActorHandlerTestModuleHunger\obj\Release\netcoreapp3.1\ActorHandlerTestModuleHunger.AssemblyInfoInputs.cache
 C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModuleHunger\ActorHandlerTestModuleHunger\obj\Release\netcoreapp3.1\ActorHandlerTestModuleHunger.AssemblyInfo.cs
 C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModuleHunger\ActorHandlerTestModuleHunger\obj\Release\netcoreapp3.1\ActorHandlerTestModuleHunger.csproj.CoreCompileInputs.cache
