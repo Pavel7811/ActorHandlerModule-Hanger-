@@ -62,7 +62,7 @@ namespace ActorHandlerModuleHunger
             }
 
             //Вывод состояний актора
-            Console.WriteLine($"Health: {actor.GetState<SpecState>().Health}; Hunger: {actor.GetState<SpecState>().Satiety}; Fatigue: {actor.GetState<SpecState>().Stamina}; Mood: {actor.GetState<SpecState>().Mood}");
+            //Console.WriteLine($"Health: {actor.GetState<SpecState>().Health}; Hunger: {actor.GetState<SpecState>().Satiety}; Fatigue: {actor.GetState<SpecState>().Stamina}; Mood: {actor.GetState<SpecState>().Mood}");
             
             if (IsPath)
             {
@@ -92,8 +92,8 @@ namespace ActorHandlerModuleHunger
             if (actor.X == Path[i].X && actor.Y == Path[i].Y && i < Path.Length - 1)
             {
                 i++;
-                Console.WriteLine(i);
-                Console.WriteLine(Path.Length);
+                //Console.WriteLine(i);
+                //Console.WriteLine(Path.Length);
             }
 
             // Если в процессе шагания мы достигли точки назначения

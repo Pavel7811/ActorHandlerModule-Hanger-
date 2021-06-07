@@ -35,36 +35,13 @@ namespace ActorHandlerModuleHunger
             //Текущее время, переведенное в строку
             string NowTime = DateTime.Now.ToString("HH:mm:ss");
 
-            Console.WriteLine("NOW:  " + NowTime);
-            Console.WriteLine("NEED:  " + HungerTime.End.ToString());
+            //Console.WriteLine("NOW:  " + NowTime);
+            //Console.WriteLine("NEED:  " + HungerTime.End.ToString());
 
 
             if (NowTime == HungerTime.End.ToString())
             {
-                //Присваиваем приоритет в зависимости от сытости
-                //Если сытость [100-80)% то приоритет
-                if ((actor.GetState<SpecState>().Satiety <= 100) && (actor.GetState<SpecState>().Satiety > (0.8 * 100)))
-                    Priority = 4;
-                else
-                //Если сытость [80-60)% то приоритет
-                if ((actor.GetState<SpecState>().Satiety <= (0.8 * 100)) && (actor.GetState<SpecState>().Satiety > (0.6 * 100)))
-                    Priority = 24;
-                else
-                //Если сытость [60-40)% то приоритет
-                if ((actor.GetState<SpecState>().Satiety <= (0.6 * 100)) && (actor.GetState<SpecState>().Satiety > (0.4 * 100)))
-                    Priority = 44;
-                else
-                //Если сытость [40-20)% то приоритет
-                if ((actor.GetState<SpecState>().Satiety <= (0.4 * 100)) && (actor.GetState<SpecState>().Satiety > (0.2 * 100)))
-                    Priority = 64;
-                else
-                //Если сытость [20-5)% то приоритет
-                if ((actor.GetState<SpecState>().Satiety <= (0.2 * 100)) && (actor.GetState<SpecState>().Satiety > (0.05 * 100)))
-                    Priority = 84;
-                else
-                //Если сытость <=5% то приоритет
-                if (actor.GetState<SpecState>().Satiety <= (0.05 * 100))
-                    Priority = 94;
+                Priority = 0;
 
                 return true;//Выходим из активити
             }

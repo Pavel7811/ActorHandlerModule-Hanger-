@@ -68,13 +68,13 @@ namespace ActorHandlerModuleHunger
                     newPriority = 94;
 
 
-                Console.WriteLine("Назначение места употребления пищи");
+                //Console.WriteLine("Назначение места употребления пищи");
 
                 HungerPoint = new Point(AmenityFastFood[1].Coordinate);
 
-                Console.WriteLine("Место употребления пищи назначено");
+                //Console.WriteLine("Место употребления пищи назначено");
 
-                Console.WriteLine($"Координаты: {HungerPoint} ");
+                //Console.WriteLine($"Координаты: {HungerPoint} ");
 
                 Console.WriteLine($"Приоритет: {newPriority} ");
 
