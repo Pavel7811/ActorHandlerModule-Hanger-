@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "NetTopologySuite/2.2.0": {
+      "NetTopologySuite/2.0.0": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.3"
@@ -12,6 +12,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/NetTopologySuite.dll": {}
+        }
+      },
+      "NetTopologySuite.Features/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "NetTopologySuite": "[2.0.0, 3.0.0-A)"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetTopologySuite.Features.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.Features.dll": {}
         }
       },
       "System.Memory/4.5.3": {
@@ -26,18 +38,30 @@
     }
   },
   "libraries": {
-    "NetTopologySuite/2.2.0": {
-      "sha512": "nGsgH686NvvmnD2FywpF0et1J8sKO734Jrbgc5tWQ3CjPUIUVJgN6BeNHtFe51+AvNGL9rJkbmoCCrH+R+egFA==",
+    "NetTopologySuite/2.0.0": {
+      "sha512": "3ajBClEI9wx2/DjjGmV52sHW1m52vLg8sdz1pJbTf5ySj1X90qehQs3v1DRwGo0F8UKj/Z2SjNhRN/6LroAkqg==",
       "type": "package",
-      "path": "nettopologysuite/2.2.0",
+      "path": "nettopologysuite/2.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "icon.png",
         "lib/netstandard2.0/NetTopologySuite.dll",
         "lib/netstandard2.0/NetTopologySuite.xml",
-        "nettopologysuite.2.2.0.nupkg.sha512",
+        "nettopologysuite.2.0.0.nupkg.sha512",
         "nettopologysuite.nuspec"
+      ]
+    },
+    "NetTopologySuite.Features/2.0.0": {
+      "sha512": "RDbEpujDL0bsAyTMHlbKj36KIPhUrtSGUaO/jUjMnsLcixrJFwoDJ8p717FdgMHpQDrcEJAKF+QsAlYsSULkew==",
+      "type": "package",
+      "path": "nettopologysuite.features/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/NetTopologySuite.Features.dll",
+        "lib/netstandard2.0/NetTopologySuite.Features.xml",
+        "nettopologysuite.features.2.0.0.nupkg.sha512",
+        "nettopologysuite.features.nuspec"
       ]
     },
     "System.Memory/4.5.3": {
@@ -64,7 +88,8 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "NetTopologySuite >= 2.2.0"
+      "NetTopologySuite >= 2.0.0",
+      "NetTopologySuite.Features >= 2.0.0"
     ]
   },
   "packageFolders": {
@@ -74,11 +99,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\ActorHandlerModuleHunger.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\ActorHandlerModuleHunger.csproj",
       "projectName": "ActorHandlerModuleHunger",
-      "projectPath": "C:\\Users\\User\\Desktop\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\ActorHandlerModuleHunger.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\ActorHandlerModuleHunger.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -111,7 +136,11 @@
         "dependencies": {
           "NetTopologySuite": {
             "target": "Package",
-            "version": "[2.2.0, )"
+            "version": "[2.0.0, )"
+          },
+          "NetTopologySuite.Features": {
+            "target": "Package",
+            "version": "[2.0.0, )"
           }
         },
         "imports": [

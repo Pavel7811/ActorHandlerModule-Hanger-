@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v3.1": {
       "ActorHandlerModuleHunger/1.0.0": {
         "dependencies": {
-          "NetTopologySuite": "2.2.0",
+          "NetTopologySuite": "2.0.0",
+          "NetTopologySuite.Features": "2.0.0",
           "ActorModule": "1.0.0.0",
           "CityDataExpansionModule": "1.0.0.0",
           "InitializeActorModule": "1.0.0.0",
@@ -20,12 +21,23 @@
           "ActorHandlerModuleHunger.dll": {}
         }
       },
-      "NetTopologySuite/2.2.0": {
+      "NetTopologySuite/2.0.0": {
         "dependencies": {
           "System.Memory": "4.5.3"
         },
         "runtime": {
           "lib/netstandard2.0/NetTopologySuite.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "NetTopologySuite.Features/2.0.0": {
+        "dependencies": {
+          "NetTopologySuite": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetTopologySuite.Features.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.0.0"
           }
@@ -88,12 +100,19 @@
       "serviceable": false,
       "sha512": ""
     },
-    "NetTopologySuite/2.2.0": {
+    "NetTopologySuite/2.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-nGsgH686NvvmnD2FywpF0et1J8sKO734Jrbgc5tWQ3CjPUIUVJgN6BeNHtFe51+AvNGL9rJkbmoCCrH+R+egFA==",
-      "path": "nettopologysuite/2.2.0",
-      "hashPath": "nettopologysuite.2.2.0.nupkg.sha512"
+      "sha512": "sha512-3ajBClEI9wx2/DjjGmV52sHW1m52vLg8sdz1pJbTf5ySj1X90qehQs3v1DRwGo0F8UKj/Z2SjNhRN/6LroAkqg==",
+      "path": "nettopologysuite/2.0.0",
+      "hashPath": "nettopologysuite.2.0.0.nupkg.sha512"
+    },
+    "NetTopologySuite.Features/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RDbEpujDL0bsAyTMHlbKj36KIPhUrtSGUaO/jUjMnsLcixrJFwoDJ8p717FdgMHpQDrcEJAKF+QsAlYsSULkew==",
+      "path": "nettopologysuite.features/2.0.0",
+      "hashPath": "nettopologysuite.features.2.0.0.nupkg.sha512"
     },
     "System.Memory/4.5.3": {
       "type": "package",

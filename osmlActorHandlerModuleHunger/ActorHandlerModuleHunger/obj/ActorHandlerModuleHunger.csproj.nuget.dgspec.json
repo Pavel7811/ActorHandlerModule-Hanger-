@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\ActorHandlerModuleHunger.csproj": {}
+    "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\ActorHandlerModuleHunger.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\ActorHandlerModuleHunger.csproj": {
+    "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\ActorHandlerModuleHunger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\ActorHandlerModuleHunger.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\ActorHandlerModuleHunger.csproj",
         "projectName": "ActorHandlerModuleHunger",
-        "projectPath": "C:\\Users\\User\\Desktop\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\ActorHandlerModuleHunger.csproj",
+        "projectPath": "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\ActorHandlerModuleHunger.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\obj\\",
+        "outputPath": "C:\\Users\\User\\Documents\\GitHub\\ActorHandlerModule-Hanger-\\osmlActorHandlerModuleHunger\\ActorHandlerModuleHunger\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -44,7 +44,11 @@
           "dependencies": {
             "NetTopologySuite": {
               "target": "Package",
-              "version": "[2.2.0, )"
+              "version": "[2.0.0, )"
+            },
+            "NetTopologySuite.Features": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             }
           },
           "imports": [
