@@ -29,7 +29,7 @@ namespace ActorHandlerModuleHunger
         /// </summary>
         public override void Update(long elapsedMilliseconds)
         {
-            TimeUpdate += elapsedMilliseconds;
+            TimeUpdate += elapsedMilliseconds / 1000;
             //Парсинг объектов с карты с тегом shop 
             List<OsmClosedWay> AmenityFastFood = MapObjects.GetAll<OsmClosedWay>().Where(x => x.Tags.ContainsKey("shop")).ToList();
 
