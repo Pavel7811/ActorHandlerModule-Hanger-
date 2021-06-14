@@ -18,6 +18,8 @@ namespace ActorHandlerTestModuleHunger
         protected override void Initialize()
         {
         }
+
+        int count = 0;
         public override void Update(long elapsedMilliseconds)
         {
             //Парсинг объектов с карты с тегом shop 
@@ -36,7 +38,7 @@ namespace ActorHandlerTestModuleHunger
 
                 //Console.WriteLine($"Flags: {isActivity} {goActivity} {timefal}");
 
-                if (!isActivity)
+                if (!isActivity && count != actors.Count)
                 {
                     int Priority = 0;
                     //Присваиваем приоритет в зависимости от сытости
@@ -77,6 +79,7 @@ namespace ActorHandlerTestModuleHunger
                     // Назначить актору путь до дома
                     actor.Activity = new MovementActivityHunger(Priority, HungerPoint);
                     Console.WriteLine("Said actor go home\n");
+                    count++;
                 }
             }
         }

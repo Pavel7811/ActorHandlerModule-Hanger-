@@ -4,7 +4,6 @@ using InitializeActorModule;
 using NetTopologySuite.Geometries;
 using PathsFindingCoreModule;
 using NetTopologySuite.Mathematics;
-using System.Threading.Tasks;
 
 namespace ActorHandlerModuleHunger
 {
@@ -17,95 +16,61 @@ namespace ActorHandlerModuleHunger
         public bool IsPath = true;
         //Время на обновление
         public double TimeUpdate = 0;
-
-        public bool IsCompleted { get; set; }
+        public bool End = true;
         //Точка питания
+        public Point Destination { get; set; }
+        private bool IsHaveDestination { get; set; }
         public Point HungerPoint { get; set; }
-
-        // Приоритет делаем авто-свойством, со значением по умолчанию
+        public DateTime TimeEnd { get; set; }
         public int Priority { get; set; } = 0;
-        //Интервал врмени на питание
-        public TimeInterval HungerTime { get; set; }
 
         public MovementActivityHunger(int priority, Point hungerPoint)
         {
             Priority = priority;
             HungerPoint = hungerPoint;
+            IsHaveDestination = false;
+            //Console.WriteLine($"Start MovementActivity(Hunger)");
         }
 
         // Здесь происходит работа с актором
         public bool Update(Actor actor, double deltaTime)
         {
-            TimeUpdate += deltaTime;
-            // Расстояние, которое может пройти актор с заданной скоростью за прошедшее время
-            double distance = actor.GetState<SpecState>().Speed * deltaTime;
-            //Уменьшаем статы акторы раз в секунду
-            if (TimeUpdate >= 1)
-            {
-                //Голод
-                if (actor.GetState<SpecState>().Satiety <= 0.1)
-                    actor.GetState<SpecState>().Satiety = 0;
-                else
-                    actor.GetState<SpecState>().Satiety -= 0.001 * 100;
-                //Усталость
-                if (actor.GetState<SpecState>().Stamina <= 0.1)
-                    actor.GetState<SpecState>().Stamina = 0;
-                else
-                    actor.GetState<SpecState>().Stamina -= 0.001 * 100;
-                //Настроение
-                if (actor.GetState<SpecState>().Mood <= 0.1)
-                    actor.GetState<SpecState>().Mood = 0;
-                else
-                    actor.GetState<SpecState>().Mood -= 0.0001 * 100;
+            //Console.WriteLine("Actor is moving (hunger).");
 
-                TimeUpdate -= 1;
-            }
-
-            //Вывод состояний актора
-            //Console.WriteLine($"Health: {actor.GetState<SpecState>().Health}; Hunger: {actor.GetState<SpecState>().Satiety}; Fatigue: {actor.GetState<SpecState>().Stamina}; Mood: {actor.GetState<SpecState>().Mood}");
-            
-            if (IsPath)
+            if (!IsHaveDestination)
             {
-                var firstCoordinate = new Coordinate(actor.X, actor.Y);
-                var secondCoordinate = new Coordinate(HungerPoint.X, HungerPoint.Y);
-                Path = PathsFinding.GetPath(firstCoordinate, secondCoordinate, "Walking").Result.Coordinates;
-                IsPath = false;
-            }
-
-            Vector2D direction = new Vector2D(actor.Coordinate, Path[i]);
-            // Проверка на перешагивание
-            if (direction.Length() <= distance)
-            {
-                // Шагаем в точку, если она ближе, чем расстояние которое можно пройти
-                actor.X = Path[i].X;
-                actor.Y = Path[i].Y;
+                Destination = HungerPoint;
+                IsHaveDestination = true;
             }
             else
             {
-                // Вычисляем новый вектор, с направлением к точке назначения и длинной в distance
-                direction = direction.Normalize().Multiply(distance);
-                // Смещаемся по вектору
-                actor.X += direction.X;
-                actor.Y += direction.Y;
-            }
+                TimeUpdate += deltaTime;
+                // Расстояние, которое может пройти актор с заданной скоростью за прошедшее время
+                double distance = 100 * deltaTime;
+                //Уменьшаем статы акторы раз в секунду
+                if (TimeUpdate >= 1)
+                {
+                    //Голод
+                    if (actor.GetState<SpecState>().Satiety <= 0.1)
+                        actor.GetState<SpecState>().Satiety = 0;
+                    else
+                        actor.GetState<SpecState>().Satiety -= 0.001 * 100;
+                    //Усталость
+                    if (actor.GetState<SpecState>().Stamina <= 0.1)
+                        actor.GetState<SpecState>().Stamina = 0;
+                    else
+                        actor.GetState<SpecState>().Stamina -= 0.001 * 100;
+                    //Настроение
+                    if (actor.GetState<SpecState>().Mood <= 0.1)
+                        actor.GetState<SpecState>().Mood = 0;
+                    else
+                        actor.GetState<SpecState>().Mood -= 0.0001 * 100;
 
-            if (actor.X == Path[i].X && actor.Y == Path[i].Y && i < Path.Length - 1)
-            {
-                i++;
-                //Console.WriteLine(i);
-                //Console.WriteLine(Path.Length);
-            }
+                    TimeUpdate -= 1;
+                }
 
-            // Если в процессе шагания мы достигли точки назначения
-            if (actor.X == Path[Path.Length - 1].X && actor.Y == Path[Path.Length - 1].Y)
-            {
-                //Установка времени на принятие пищи
-                HungerTime = new TimeInterval(DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second,
-                    Convert.ToInt32(DateTime.Now.AddHours(0)),
-                    Convert.ToInt32(DateTime.Now.AddMinutes(0)),
-                    Convert.ToInt32(DateTime.Now.AddSeconds(10)));
-
-                Console.WriteLine("Start Waiting");
+                //Вывод состояний актора
+                //Console.WriteLine($"Health: {actor.GetState<SpecState>().Health}; Hunger: {actor.GetState<SpecState>().Satiety}; Fatigue: {actor.GetState<SpecState>().Stamina}; Mood: {actor.GetState<SpecState>().Mood}");
 
                 //Присваиваем приоритет в зависимости от сытости
                 //Если сытость [100-80)% то приоритет
@@ -132,14 +97,61 @@ namespace ActorHandlerModuleHunger
                 if (actor.GetState<SpecState>().Satiety <= (0.05 * 100))
                     Priority = 94;
 
-                i = 0;
+                if (IsPath)
+                {
+                    var firstCoordinate = new Coordinate(actor.X, actor.Y);
+                    var secondCoordinate = new Coordinate(Destination.X, Destination.Y);
+                    if (!PathsFinding.GetPath(firstCoordinate, secondCoordinate, "Walking").IsCompleted && !End)
+                        return false;
+                    End = false;
+                    Path = PathsFinding.GetPath(firstCoordinate, secondCoordinate, "Walking").Result.Coordinates;
+                    End = true;
+                    IsPath = false;
+                }
 
-                IsPath = true;
+                Vector2D direction = new Vector2D(actor.Coordinate, Path[i]);
+                // Проверка на перешагивание
+                if (direction.Length() <= distance)
+                {
+                    // Шагаем в точку, если она ближе, чем расстояние которое можно пройти
+                    actor.X = Path[i].X;
+                    actor.Y = Path[i].Y;
+                }
+                else
+                {
+                    // Вычисляем новый вектор, с направлением к точке назначения и длинной в distance
+                    direction = direction.Normalize().Multiply(distance);
+                    // Смещаемся по вектору
+                    actor.X += direction.X;
+                    actor.Y += direction.Y;
+                }
 
-                //Запуск ожидания
-                actor.Activity = new WaitingActivityHunger(Priority, HungerTime);
+                if (actor.X == Path[i].X && actor.Y == Path[i].Y && i < Path.Length - 1)
+                {
+                    i++;
+                }
+
+                // Если в процессе шагания мы достигли точки назначения
+                if (actor.X == Path[Path.Length - 1].X && actor.Y == Path[Path.Length - 1].Y)
+                {
+                    //Установка времени на принятие пищи
+                    TimeEnd = DateTime.Now.AddMinutes(2);
+                    //Console.WriteLine("Start Waiting (Hunger)");
+                    i = 0;
+                    IsPath = true;
+                    //Console.WriteLine("Stats actors:");
+                    //Console.WriteLine($"Health: {actor.GetState<SpecState>().Health}; " +
+                        //$"Hunger: {actor.GetState<SpecState>().Satiety}; " +
+                        //$"Fatigue: {actor.GetState<SpecState>().Stamina}; " +
+                        //$"Mood: {actor.GetState<SpecState>().Mood}");
+
+                    //Запуск ожидания
+                    actor.Activity = new WaitingActivityHunger(Priority, TimeEnd);
+                    IsHaveDestination = false;
+                    Priority = 0;
+                    //return true;
+                }
             }
-
             return false;
         }
     }

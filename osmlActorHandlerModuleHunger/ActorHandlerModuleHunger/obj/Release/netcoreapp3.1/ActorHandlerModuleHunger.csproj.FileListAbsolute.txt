@@ -29,3 +29,4 @@ C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModule
 C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModuleHunger\ActorHandlerModuleHunger\obj\Release\netcoreapp3.1\ActorHandlerModuleHunger.csproj.CopyComplete
 C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModuleHunger\ActorHandlerModuleHunger\obj\Release\netcoreapp3.1\ActorHandlerModuleHunger.dll
 C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModuleHunger\ActorHandlerModuleHunger\obj\Release\netcoreapp3.1\ActorHandlerModuleHunger.pdb
+C:\Users\User\Documents\GitHub\ActorHandlerModule-Hanger-\osmlActorHandlerModuleHunger\ActorHandlerModuleHunger\obj\Release\netcoreapp3.1\ActorHandlerModuleHunger.csprojAssemblyReference.cache
