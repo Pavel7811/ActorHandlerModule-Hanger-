@@ -149,6 +149,7 @@ namespace ActorHandlerModuleHunger
                     actor.Activity = new WaitingActivityHunger(Priority, TimeEnd);
                     IsHaveDestination = false;
                     Priority = 0;
+                    
                     //return true;
                 }
             }

@@ -76,13 +76,13 @@ namespace ActorHandlerModuleHunger
 
                     //Если нет активности или активность не относится к голоду и приоритет активностей голода больше текущего приоритета
                     //Назначаем новую активность
-                    if ((!isActivity) || ( newPriority > actor.Activity.Priority))
+                    if ((!isActivity) || (!isHungerMovementActivity && !isHungerWaitingActivity && (newPriority > actor.Activity.Priority)))
                     {
                         // Назначить актору путь до точки общепита
                         actor.Activity = new MovementActivityHunger(newPriority, HungerPoint);
                         ///Console.WriteLine($"Time Now: {DateTime.Now}\n");
                         Console.WriteLine("Said actor go Hunger\n");
-                        //(!isHungerMovementActivity && !isHungerWaitingActivity &&
+                        //
                     }
                 }
             }
